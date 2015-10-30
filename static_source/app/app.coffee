@@ -18,17 +18,12 @@ angular.module('app')
   .config ['$routeProvider', '$locationProvider', '$routeSegmentProvider'
   ($routeProvider, $locationProvider, $routeSegmentProvider) ->
     $routeSegmentProvider
-      .when '/',              'base.index'
+      .when '/',              'home'
 
-      .segment 'base',
-        templateUrl: '/templates/base.html'
-        controller: 'baseCtrl as base'
-
-      .within()
-        .segment 'index',
-          default: true
-          templateUrl: '/templates/index.html'
-          controller: 'indexCtrl as index'
+      .segment 'home',
+        default: true
+        templateUrl: '/templates/home.html'
+        controller: 'homeCtrl as home'
 
     $locationProvider.html5Mode
       enabled: true

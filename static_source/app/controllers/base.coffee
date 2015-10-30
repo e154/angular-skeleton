@@ -6,4 +6,5 @@ angular
   ($scope) ->
     vm = this
 
+    console.log 'base ctrl'
   ]

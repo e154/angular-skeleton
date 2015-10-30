@@ -2,8 +2,9 @@
 
 angular
   .module('appControllers')
-  .controller 'indexCtrl', ['$scope'
+  .controller 'homeCtrl', ['$scope'
   ($scope) ->
     vm = this
 
+    console.log 'home ctrl'
   ]
