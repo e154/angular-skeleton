@@ -7,8 +7,8 @@ module.exports = {
         filename: 'lib.min.js',
         paths: {
             bowerDirectory: source + '/bower_components',
-            bowerrc: source + '/.bowerrc',
-            bowerJson: source + '/bower.json'
+            bowerrc: '.bowerrc',
+            bowerJson: 'bower.json'
         },
         dest: source + '/js'
     },
@@ -27,8 +27,8 @@ module.exports = {
         filename: 'lib.min.css',
         paths: {
             bowerDirectory: source + '/bower_components',
-            bowerrc: source + '/.bowerrc',
-            bowerJson: source + '/bower.json'
+            bowerrc: '.bowerrc',
+            bowerJson: 'bower.json'
         },
         dest: source + '/css'
     },
