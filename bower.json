@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "jsPlumb": "sporritt/jsplumb#~2.0.4"
+
   }
 }
