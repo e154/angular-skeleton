@@ -1,0 +1,6 @@
+/public
+/node_modules
+/static_source/css
+/static_source/js
+/static_source/bower_components
+.idea

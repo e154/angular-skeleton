@@ -1,0 +1,30 @@
+{
+  "name": "bpm static source",
+  "version": "0.0.0",
+  "authors": [
+    "delta54 <support@e154.ru>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.4.3",
+    "angular-route": "~1.4.3",
+    "angular-route-segment": "~1.5.0",
+    "angular-resource": "~1.4.3",
+    "jquery": "~2.1.4",
+    "jsPlumb": "sporritt/jsplumb#~2.0.4"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
+      ]
+    }
+  }
+}
