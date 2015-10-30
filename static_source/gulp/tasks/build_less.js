@@ -6,10 +6,10 @@ var gulp = require('gulp'),
     less = require('gulp-less'),
     concat = require('gulp-concat');
 
-gulp.task('build_less', function() {
+gulp.task('build_less', function(done) {
     return gulp.src(conf.source)
         .pipe(concat(conf.filename))
         .pipe(less())
-        .on('error',function(e){console.log(e);})
+        .on('error',function(e){console.log(e);done();})
         .pipe(gulp.dest(conf.dest));
 });
