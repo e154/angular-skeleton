@@ -46,6 +46,11 @@ module.exports = {
         root: [ source + '/templates', source],
         livereload: true,
         port: 8080,
-        fallback: 'static_source/templates/index.html'
+        fallback: 'static_source/templates/index.html',
+        watch: [
+            'static_source/templates/*.html',
+            'static_source/js/*.js',
+            'static_source/css/*.css'
+        ]
     }
 };

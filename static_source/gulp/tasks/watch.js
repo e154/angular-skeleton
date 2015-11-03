@@ -14,4 +14,5 @@ gulp.task('watch', function() {
     gulp.watch(config.build_less.watch, function() {
         gulp.run('build_less');
     });
+    gulp.watch(config.webserver.watch, ['webserver_reload']);
 });
