@@ -6,7 +6,9 @@ gulp.task('webserver', function() {
     connect.server({
         root: config.root,
         livereload: config.livereload,
-        port: config.port
+        port: config.port,
+
+        fallback: config.fallback
     });
 
     console.log('Server listening on http://localhost:'+config.port);

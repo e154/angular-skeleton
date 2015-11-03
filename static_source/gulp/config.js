@@ -45,6 +45,7 @@ module.exports = {
     webserver: {
         root: [ source + '/templates', source],
         livereload: true,
-        port: 8080
+        port: 8080,
+        fallback: 'static_source/templates/index.html'
     }
 };
