@@ -16,7 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "angularjs": "~1.4.3",
+    "angular": "~1.4.3",
     "angular-route": "~1.4.3",
     "angular-route-segment": "~1.5.0",
     "angular-resource": "~1.4.3",
