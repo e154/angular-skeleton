@@ -15,6 +15,7 @@ function do_clear() {
 	rm -frd static_source/bower_components
 	rm -frd static_source/css
 	rm -frd static_source/js
+	rm -frd static_source/tmp
 }
 
 case "$1" in
