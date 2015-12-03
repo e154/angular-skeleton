@@ -1,7 +1,7 @@
 Angular skeleton
 ----------------
 
-Angular skeleton application for coffee script language and less. To quickly and easily launch applications.
+Angular skeleton application for coffee script language, less, haml, and template caching. To quickly and easily launch applications.
 The application allows you to start quickly and easily adjust to fit your needs.
 
 #### init

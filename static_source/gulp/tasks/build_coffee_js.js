@@ -1,7 +1,3 @@
-/**
- * Created by delta54 on 6/30/15.
- */
-
 var gulp = require('gulp'),
     conf = require('../config').build_coffee_js,
     concat = require('gulp-concat'),

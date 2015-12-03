@@ -45,12 +45,27 @@ module.exports = {
     webserver: {
         root: [ source + '/templates', source],
         livereload: true,
-        port: 8080,
-        fallback: 'static_source/templates/index.html',
+        port: 8088,
+        fallback: 'static_source/index.html',
         watch: [
-            'static_source/templates/*.html',
             'static_source/js/*.js',
             'static_source/css/*.css'
         ]
+    },
+    build_haml: {
+        source: 'static_source/templates/**/*.haml',
+        tmp: 'static_source/tmp/templates',
+        watch: [
+            "static_source/templates/**/*.haml"
+        ]
+    },
+    build_templates: {
+        filename: "templates.min.js",
+        prefix: '/templates/',
+        source: 'static_source/tmp/templates/**/*',
+        watch: [
+            'static_source/tmp/templates/**/*'
+        ],
+        dest: 'static_source/js'
     }
 };

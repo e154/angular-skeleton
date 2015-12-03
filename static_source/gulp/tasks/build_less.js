@@ -1,6 +1,3 @@
-/**
- * Created by delta54 on 01.12.14.
- */
 var gulp = require('gulp'),
     conf = require('../config').build_less,
     less = require('gulp-less'),
