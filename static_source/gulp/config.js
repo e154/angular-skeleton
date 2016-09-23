@@ -16,6 +16,7 @@ module.exports = {
         filename: 'app.min.js',
         source: [
             source + "/app/app.coffee",
+            source + "/app/*.coffee",
             source + "/app/services/**/*.coffee",
             source + "/app/directives/**/*.coffee",
             source + "/app/controllers/**/*.coffee"

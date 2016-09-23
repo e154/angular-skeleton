@@ -1,10 +1,12 @@
 'use strict'
 
 angular
-  .module('appControllers')
-  .controller 'homeCtrl', ['$scope'
-  ($scope) ->
-    vm = this
+.module('appControllers')
+.controller 'homeCtrl', ['$scope', 'Notify'
+($scope, Notify) ->
+  vm = this
 
-    console.log 'home ctrl'
-  ]
+  Notify 'error', "Тестовое сообщение"
+
+  console.log 'home ctrl'
+]
